@@ -1,0 +1,19 @@
+[
+    {
+        "first_name": "Dee",
+        "username": "Dee21",
+        "email": "dee21@gmail.com",
+        "password": "123456",
+        "address": [
+            {
+                "address1": "90 Cross Street",
+                "address2": "apartment 3c",
+                "city": "New York",
+                "state": "NY",
+                "postal": "10987"
+
+            }
+        ]
+    
+    }
+]

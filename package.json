@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "apollo-server-express": "^3.11.1",
+    "graphql": "^16.6.0",
+    "react": "^18.2.0",
+    "require": "^2.4.20"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "my-wellness-box",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnecia/My-Wellness-Box.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dnecia/My-Wellness-Box/issues"
+  },
+  "homepage": "https://github.com/dnecia/My-Wellness-Box#readme"
+}
