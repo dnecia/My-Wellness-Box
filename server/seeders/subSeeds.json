@@ -1,0 +1,15 @@
+[
+    {
+        "customer": "",
+        "sub_date": "11/8/22",
+        "paid_amount": 9.99
+       
+    },
+    {
+        "customer": "",
+        "sub_date": "11/9/22",
+        "paid_amount": 49.99
+      
+    }
+    
+]

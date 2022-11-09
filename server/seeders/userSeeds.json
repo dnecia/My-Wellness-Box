@@ -1,6 +1,7 @@
 [
     {
         "first_name": "Dee",
+        "last_name": "Katz",
         "username": "Dee21",
         "email": "dee21@gmail.com",
         "password": "123456",
@@ -10,7 +11,7 @@
                 "address2": "apartment 3c",
                 "city": "New York",
                 "state": "NY",
-                "postal": "10987"
+                "postalcode": "10987"
 
             }
         ]
