@@ -16,10 +16,12 @@ module.exports ={
             .trim();
         }
         if(!token){
+            //if no token is found, throw this error message.
             return res.status(400).json({ message: 'invalid token'});
         }
         try{
             const { data } = jwt.verify(token, secret, {maxAge: expiration});
+            req.user=data;
         } catch {
             console.log('invalid token');
             return res.status(400).json({ message: 'invalid token'});
