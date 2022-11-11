@@ -19,6 +19,7 @@ module.exports ={
             //if no token is found, throw this error message.
             return res.status(400).json({ message: 'invalid token'});
         }
+        //verify token and retrieve user data from token.
         try{
             const { data } = jwt.verify(token, secret, {maxAge: expiration});
             req.user=data;
