@@ -23,6 +23,14 @@ const resolvers = {
         return User.findOne({username})
           .select('-__v -password');
       }
+    },
+    Mutation:{
+      addUser: async (parent, args)=>{
+        const user =await User.create(args);
+        const token= signToken(user);
+
+        return{token,user}
+      }
     }
   };
   
