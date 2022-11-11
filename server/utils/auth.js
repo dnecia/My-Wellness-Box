@@ -17,7 +17,7 @@ module.exports ={
         }
         if(!token){
             //if no token is found, throw this error message.
-            return res.status(400).json({ message: 'invalid token'});
+            return res.status(400).json({ message: 'token does not exist.'});
         }
         //verify token and retrieve user data from token.
         try{
