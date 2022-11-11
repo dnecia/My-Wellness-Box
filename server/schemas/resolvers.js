@@ -35,6 +35,19 @@ const resolvers = {
       //finds user by email, and checks if password is correct. if both are correct, then login.
       login: async (parent, {email, password})=>{
         const user= await User.findOne({email});
+        //if no user found with that email, then throw error.
+        if (!user){
+          throw new AuthenticationError('wrong credentials')
+        }
+
+        const correctPw=await user.isCorrectPassword(password);
+        //if password isn't correct, then throw error.
+        if(!correctPw){
+          throw new AuthenticationError('wrong credentials')
+        }
+
+        const token= signToken(user);
+        return{token,user}
       }
     }
   };
