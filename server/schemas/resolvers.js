@@ -25,11 +25,16 @@ const resolvers = {
       }
     },
     Mutation:{
+      //creates new user.
       addUser: async (parent, args)=>{
         const user =await User.create(args);
         const token= signToken(user);
 
         return{token,user}
+      },
+      //finds user by email, and checks if password is correct. if both are correct, then login.
+      login: async (parent, {email, password})=>{
+        const user= await User.findOne({email});
       }
     }
   };
