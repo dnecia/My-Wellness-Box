@@ -1,28 +1,19 @@
 {
-  "dependencies": {
-    "apollo-server-express": "^3.11.1",
-    "concurrently": "^7.5.0",
-    "graphql": "^16.6.0",
-    "react": "^18.2.0",
-    "require": "^2.4.20"
-  },
-  "scripts": {
-    "start": "node server.js",
-    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-    "build": "cd client && npm run build"
-  },
-  "name": "my-wellness-box",
-  "description": "",
+  "name": "restaraunt-reviews",
   "version": "1.0.0",
-  "main": "server.js",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dnecia/My-Wellness-Box.git"
+    "url": "git+https://github.com/dnecia/Restaraunt-Reviews.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dnecia/My-Wellness-Box/issues"
+    "url": "https://github.com/dnecia/Restaraunt-Reviews/issues"
   },
-  "homepage": "https://github.com/dnecia/My-Wellness-Box#readme"
+  "homepage": "https://github.com/dnecia/Restaraunt-Reviews#readme"
 }
