@@ -10,7 +10,17 @@ const ReviewForm=()=>{
     const[characterCount, setCharcterCount] = useState(0);
 
     const [addReview, {error}] = useMutation(ADD_REVIEW,{
-        
+        update(cache, {data: {addReview}}){
+            //review data might not be there yet.
+            try{
+                //update me array's cache.
+                const {me} = cache.readQuery({ query: QUERY_ME});
+                cache.writeQuery({
+                    query: QUERY_ME,
+                    data:{me: {...me, reviews: [...me.reviews,addReview]}}
+                })
+            } catch (e){}
+        }
     });
 
 }
