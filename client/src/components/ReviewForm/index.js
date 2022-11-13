@@ -19,7 +19,18 @@ const ReviewForm=()=>{
                     query: QUERY_ME,
                     data:{me: {...me, reviews: [...me.reviews,addReview]}}
                 })
-            } catch (e){}
+            } catch (e){
+                console.warn("first review by user!")
+            }
+            //read what's in cache.
+            const {reviews}=cache.readQuery({ query: QUERY_REVIEWS});
+
+            //prepend the newest review to the front of array.
+            cache.writeQuery({
+                query: QUERY_REVIEWS,
+                data: {reviews: [addReview,...reviews]}
+
+            })
         }
     });
 
