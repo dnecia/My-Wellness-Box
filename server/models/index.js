@@ -1,3 +1,3 @@
 const User = require("./User");
-const Sub = require("./Sub")
-module.exports = { User, Sub};
+const Review = require("./Review")
+module.exports = { User, Review };
