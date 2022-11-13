@@ -1,7 +1,7 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
-import {QUERY_REVIEWS, QUERY_ME_BASIC} from 'src/utils/queries';
-import Auth from 'src/utils/auth';
+import {QUERY_REVIEWS, QUERY_ME_BASIC} from '../src/utils/queries';
+import Auth from '../src/utils/auth';
 
 const Home = ()=>{
     //useQuery hook to make request.
@@ -10,4 +10,10 @@ const Home = ()=>{
     const {data: userData} = useQuery(QUERY_ME_BASIC)
 
     const loggedIn=Auth.loggedIn();
+    
+    return(
+        <main>
+
+        </main>
+    )
 }
