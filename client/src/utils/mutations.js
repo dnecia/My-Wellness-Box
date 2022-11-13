@@ -23,3 +23,48 @@ export const ADD_USER = gql`
         }
     }
 `;
+
+export const ADD_FRIEND = gql`
+  mutation addFriend($id: ID!) {
+    addFriend(friendId: $id) {
+      _id
+      username
+      friendCount
+      friends {
+        _id
+        username
+      }
+    }
+  }
+`;
+
+export const ADD_REVIEW = gql`
+  mutation addReview($reviewText: String!) {
+    addReview(reviewText: $reviewText) {
+      _id
+      reviewText
+      createdAt
+      username
+      commentCount
+      comments {
+        _id
+      }
+    }
+  }
+`;
+
+export const ADD_COMMENT= gql`
+  mutation addComment($reviewId: ID!, $commentBody: String!) {
+    addComment(reviewId: $reviewId, commentBody: $commentBody) {
+      _id
+      commentCount
+      comments {
+        _id
+        commentBody
+        createdAt
+        username
+      }
+    }
+  }
+`;
+
