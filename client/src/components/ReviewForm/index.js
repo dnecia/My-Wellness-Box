@@ -41,6 +41,18 @@ const ReviewForm=()=>{
             setCharacterCount(event.target.value.length);
         }
     }
+    //submits data in the form. and also clears fields.
+    const handleFormSubmit = async event =>{
+        event.preventDefault();
+
+        try{
+            await addReview({
+                variables:{reviewText}
+            })
+        } catch (e){
+            console.log(e)
+        }
+    }
     
 
 }
