@@ -7,7 +7,7 @@ const ReviewForm=()=>{
     //sets initial state of text to an empty string.
     const[reviewText, setText] =useState('');
     //sets initial state of of characterCount to 0
-    const[characterCount, setCharcterCount] = useState(0);
+    const[characterCount, setCharacterCount] = useState(0);
 
     const [addReview, {error}] = useMutation(ADD_REVIEW,{
         update(cache, {data: {addReview}}){
@@ -33,6 +33,15 @@ const ReviewForm=()=>{
             })
         }
     });
+    
+    //changes character count state, it also sets text state to whatever is written in field.
+    const handleChange = event =>{
+        if(event.target.value.length<=300){
+            setText(event.target.value);
+            setCharacterCount(event.target.value.length);
+        }
+    }
+    
 
 }
 
