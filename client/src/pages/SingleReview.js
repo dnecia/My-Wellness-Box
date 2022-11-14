@@ -10,7 +10,7 @@ import CommentList from "../components/CommentList";
 
 //import comment form
 import Auth from "../utils/auth";
-import CommentForm from "../components/ReactionForm";
+import CommentForm from "../components/CommentForm";
 
 const SingleReview = (props) => {
     //get id from the url
