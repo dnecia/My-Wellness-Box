@@ -38,4 +38,6 @@ const Home = ()=>{
             {/* insert friends list here once it's done. */}
         </main>
     )
-}
+};
+
+export default Home;

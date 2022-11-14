@@ -28,7 +28,7 @@ const ReviewForm=()=>{
             //prepend the newest review to the front of array.
             cache.writeQuery({
                 query: QUERY_REVIEWS,
-                data: {reviews: [addReview,...reviews]}
+                data: {reviews: [addReview,...reviews]},
 
             })
         }
@@ -50,9 +50,9 @@ const ReviewForm=()=>{
                 variables:{reviewText}
             })
         } catch (e){
-            console.log(e)
+            console.error(e)
         }
-    }
+    };
     
     return(
         <div>

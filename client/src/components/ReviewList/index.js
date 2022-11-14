@@ -36,6 +36,6 @@ const ReviewList=({reviews, title})=>{
             }
         </div>
     )   
-}
+};
 
 export default ReviewList;
