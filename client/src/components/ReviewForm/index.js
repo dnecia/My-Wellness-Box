@@ -54,6 +54,24 @@ const ReviewForm=()=>{
         }
     }
     
+    return(
+        <div>
+            <form onSubmit={handleFormSubmit}>
+            <textarea
+                placeholder="Write a review here"
+                value={reviewText}
+                onChange={handleChange}
+            ></textarea>
+            <p className={`${characterCount === 300 || error ? 'text-error': ''}`}>
+                character count: {characterCount}/300
+                {error && <span>something went wrong</span>}
+            </p>
+            <button type="submit">
+                submit!
+            </button>
+            </form>
+        </div>
+    )
 
 }
 
