@@ -25,6 +25,16 @@ const Home = ()=>{
                     </div>
                 )}
             </div>
+            <div className={`${loggedIn}`}>
+                    {
+                        loading ? (
+                            <div>
+                                Loading...
+                            </div>                        
+                        ): (
+                            <ReviewList  reviews={reviews} title="here are some reviews..."/>
+                        )}
+            </div>
         </main>
     )
 }
