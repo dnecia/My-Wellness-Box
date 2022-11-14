@@ -19,7 +19,17 @@ const ReviewList=({reviews, title})=>{
                         >
                         {review.username}
                         </Link>
+                        <span> created on {review.createdAt}</span>
                     </p>
+                    <div>
+                        <Link to={`/review/${review._id}`}>
+                            <p>{review.reviewText}</p>
+                            <p>
+                                comments: {review.commentCount} || click to { ' '}
+                                {review.commentCount ? 'see': 'start'} the discussion!
+                            </p>
+                        </Link>
+                    </div>
                 </div>
              })
 
