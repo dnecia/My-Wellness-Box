@@ -18,7 +18,13 @@ const Home = ()=>{
     
     return(
         <main>
-
+            <div>
+                {loggedIn &&(
+                    <div>
+                        <ReviewForm />
+                    </div>
+                )}
+            </div>
         </main>
     )
 }
