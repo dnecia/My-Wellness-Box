@@ -47,4 +47,6 @@ const SingleReview = (props) => {
     </div>
 
     )
-}
+};
+
+export default SingleReview;
