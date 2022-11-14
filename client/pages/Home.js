@@ -35,6 +35,7 @@ const Home = ()=>{
                             <ReviewList  reviews={reviews} title="here are some reviews..."/>
                         )}
             </div>
+            {/* insert friends list here once it's done. */}
         </main>
     )
 }
