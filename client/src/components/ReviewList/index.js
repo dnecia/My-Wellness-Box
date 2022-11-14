@@ -8,6 +8,22 @@ const ReviewList=({reviews, title})=>{
     }
     return(
         <div>
+            <h3>{title}</h3>
+            {/* loops through reviews and renders them */}
+            {reviews &&
+             reviews.map(review=>{
+                <div key={review._id}>
+                    <p>
+                        <Link 
+                            to={`profile/${review.username}`}
+                        >
+                        {review.username}
+                        </Link>
+                    </p>
+                </div>
+             })
+
+            }
         </div>
     )   
 }
