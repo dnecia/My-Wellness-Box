@@ -116,3 +116,29 @@ nav a:hover {
   transition: all 0.5s;
 }
 
+.btn:hover,
+.pill:hover {
+  color: var(--secondary);
+  background-color: var(--dark);
+}
+
+.btn-inline {
+  display: inline;
+}
+
+/*Adding in the cards styling*/
+.card-header {
+  color: var(--secondary);
+  font-family: 'DM Serif Display', serif;
+  text-align: center;
+  letter-spacing: .1rem;
+  margin: 0;
+  background-color: var(--dark);
+  padding: 0.625rem;
+  border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+}
+.card-body {
+  padding: 2.5%;
+  font-size: 1.4rem;
+}
+
