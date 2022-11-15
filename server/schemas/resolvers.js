@@ -7,8 +7,11 @@ const resolvers = {
       //get logged in user data.
       me: async (parent, args, context)=>{
         if(context.user){
-          const userData = await User.findOne({ _id: context.user._id})
-          .select('-__v -password')
+           const userData = await User.findOne({ _id: context.user._id})
+            .select('-__v -password')
+            .populate("reviews")
+            .populate("friends");
+
           return userData
         }
         throw new AuthenticationError('not logged in')
@@ -17,11 +20,22 @@ const resolvers = {
       users: async()=>{
         return User.find()
           .select('-__v -password')
+          .populate("reviews")
+          .populate("friends");
       },
       //get single user by username.
       user: async (parent, {username})=>{
         return User.findOne({username})
-          .select('-__v -password');
+          .select('-__v -password')
+          .populate("friends")
+          .populate("thoughts");
+      },
+      reviews: async (parent, { username }) => {
+        const params = username ? { username } : {};
+        return Review.find(params).sort({ createdAt: -1 });
+      },
+      thought: async (parent, { _id }) => {
+        return Review.findOne({ _id });
       }
     },
     Mutation:{
