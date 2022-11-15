@@ -1195,3 +1195,85 @@ nav a:hover {
     align-items: center;
   }
 }
+/*xl*/
+@media screen and (min-width: 1200px) {
+  .col-xl-1 {
+    flex: 0 0 calc(100% * 1 / 12 - 0.5%);
+  }
+
+  .col-xl-2 {
+    flex: 0 0 calc(100% * 2 / 12 - 0.5%);
+  }
+
+  .col-xl-3 {
+    flex: 0 0 calc(100% * 3 / 12 - 0.5%);
+  }
+
+  .col-xl-4 {
+    flex: 0 0 calc(100% * 4 / 12 - 0.5%);
+  }
+
+  .col-xl-5 {
+    flex: 0 0 calc(100% * 5 / 12 - 0.5%);
+  }
+
+  .col-xl-6 {
+    flex: 0 0 calc(100% * 6 / 12 - 0.5%);
+  }
+
+  .col-xl-7 {
+    flex: 0 0 calc(100% * 7 / 12 - 0.5%);
+  }
+
+  .col-xl-8 {
+    flex: 0 0 calc(100% * 8 / 12 - 0.5%);
+  }
+
+  .col-xl-9 {
+    flex: 0 0 calc(100% * 9 / 12 - 0.5%);
+  }
+
+  .col-xl-10 {
+    flex: 0 0 calc(100% * 10 / 12 - 0.5%);
+  }
+
+  .col-xl-11 {
+    flex: 0 0 calc(100% * 11 / 12 - 0.5%);
+  }
+
+  .col-xl-12 {
+    flex: 0 0 100%;
+  }
+
+  .justify-space-between-xl {
+    justify-content: space-between;
+  }
+
+  .justify-space-around-xl {
+    justify-content: space-around;
+  }
+
+  .justify-flex-start-xl {
+    justify-content: flex-start;
+  }
+
+  .justify-flex-end-xl {
+    justify-content: flex-end;
+  }
+
+  .justify-center-xl {
+    justify-content: center;
+  }
+
+  .align-stretch-xl {
+    align-items: stretch;
+  }
+
+  .align-end-xl {
+    align-items: flex-end;
+  }
+
+  .align-center-xl {
+    align-items: center;
+  }
+}
