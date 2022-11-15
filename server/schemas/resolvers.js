@@ -71,25 +71,44 @@ const resolvers = {
           { new: true }
         );
 
-        return thought;
+        return review;
       } 
 
       throw new AuthenticationError ('Please Log In');
     },
-    addComment: async (parent, { thoughtId, reactionBody }, context) => {
+    addComment: async (parent, { reviewId, commentBody }, context) => {
       if (context.user) {
         const updateReview = await Review.findOneAndUpdate(
           {_id: reviewId },
           { $push: { comments: { commentBody, username: context.user.username }}},
           { new: true, runValidators: true }
-        )
+        );
+
+        return updatedReview;
       }
+
+      throw new AuthenticationError('Please Log in');
                 
-     }
+    },
+    addFriend: async (parent, { friendId }, context) => {
+      if (context.user) {
+        const updatedUser = await User.findOneAndUpdate(
+          {_id: context.user._id},
+          {$addToSet: { friends: friendId } },
+          { new: true }
+        ).populate('friends');
+
+        return updatedUser;
+
+      }
+      throw new AuthenticationError('Please Log in');
+       
+     
+    }
 
 
   }
 };
   
-  module.exports = resolvers;
+module.exports = resolvers;
 
