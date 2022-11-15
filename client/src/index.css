@@ -345,4 +345,62 @@ nav a:hover {
   margin-bottom: auto;
 }
 
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-1 {
+  margin-top: var(--spacing-one);
+}
+
+.mt-2 {
+  margin-top: var(--spacing-two);
+}
+
+.mt-3 {
+  margin-top: var(--spacing-three);
+}
+
+.mt-4 {
+  margin-top: var(--spacing-four);
+}
+
+.mt-5 {
+  margin-top: var(--spacing-five);
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+/* Margin-right */
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.mr-1 {
+  margin-right: var(--spacing-one);
+}
+
+.mr-2 {
+  margin-right: var(--spacing-two);
+}
+
+.mr-3 {
+  margin-right: var(--spacing-three);
+}
+
+.mr-4 {
+  margin-right: var(--spacing-four);
+}
+
+.mr-5 {
+  margin-right: var(--spacing-five);
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
 
