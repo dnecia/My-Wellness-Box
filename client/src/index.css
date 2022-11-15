@@ -1,12 +1,28 @@
 :root {
   --primary: #cab32f;
   --secondary: #c19973b4; /* header footer color and submit button*/
-  --tertiary: #622197;
+  --tertiary: #281b06;
   --quatrinary: #de872a;
   --light: #e1f5f4;
   --dark: #78553b;
   --error: rgb(228, 46, 1);
   --border-radius: 0.3rem;
   --spacing-three: 1rem; /*spacing in between thoughts*/
- 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 20px;
+  color: var(--dark);
+  background-image: url('../public/assets/images/White\ and\ Black\ Photographic\ Food\ &\ Restaurant\ Service\ Website-2.png');
+  background-size: 1300px;
+  background-repeat: no-repeat;
 }
