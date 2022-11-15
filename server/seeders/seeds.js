@@ -50,5 +50,25 @@ db.once('open', async () => {
     }
     //creating comments
 
+    for (let i = 0; i < 100; i += 1) {
+        const commentBody = faker.lorem.words(Math.round(Math.random() * 20) + 1);
+    
+        const randomUserIndex = Math.floor(Math.random() * createdUsers.ops.length);
+        const { username } = createdUsers.ops[randomUserIndex];
+
+        const randomReviewIndex = Math.floor(Math.random() * createdReviews.length);
+        const { _id: reviewId } = createReviews[randomReviewIndex];
+
+        await Review.updateOne(
+            {_id: reviewId} ,
+            {$push: {comments: { commentBody, username}}},
+            { runValidators: true }
+        );
+    
+    }    
+
+    console.log('all done!');
+    process.exit(0);
+
    
 })
