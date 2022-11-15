@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 
 import Home from './pages/Home';
 import Login from './pages/Login';
-import Profile from './pages/Profile';
+import Profile from './pages/profile';
 import Signup from './pages/Signup';
 import SingleReview from './pages/SingleReview';
 
@@ -23,7 +23,7 @@ const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
-      authorization: token ? `Bearer ${token}` : '',
+      authorization: token ? `Bearer ${token}` : "",
     },
   };
 });

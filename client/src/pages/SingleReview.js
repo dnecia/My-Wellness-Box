@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 
 //importing the query
 import {useQuery} from "@apollo/client";
-import { QUERY_REVIEW } from "..utils/queries";
+import { QUERY_REVIEW } from "../utils/queries";
 
 // import comment
 import CommentList from "../components/CommentList";

@@ -1,9 +1,9 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
-import {QUERY_REVIEWS, QUERY_ME_BASIC} from '../src/utils/queries';
-import ReviewList from '../src/components/ReviewList'
-import Auth from '../src/utils/auth';
-import ReviewForm from '../src/components/ReviewForm';
+import {QUERY_REVIEWS, QUERY_ME_BASIC} from '../utils/queries';
+import ReviewList from '../components/ReviewList'
+import Auth from '../utils/auth';
+import ReviewForm from '../components/ReviewForm';
 
 const Home = ()=>{
     //useQuery hook to make request.
