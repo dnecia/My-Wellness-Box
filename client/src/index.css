@@ -403,4 +403,104 @@ nav a:hover {
   margin-right: auto;
 }
 
+.ml-0 {
+  margin-left: 0;
+}
 
+.ml-1 {
+  margin-left: var(--spacing-one);
+}
+
+.ml-2 {
+  margin-left: var(--spacing-two);
+}
+
+.ml-3 {
+  margin-left: var(--spacing-three);
+}
+
+.ml-4 {
+  margin-left: var(--spacing-four);
+}
+
+.ml-5 {
+  margin-left: var(--spacing-five);
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+/* Margin - x axis */
+
+.mx-0 {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.mx-1 {
+  margin-right: var(--spacing-one);
+  margin-left: var(--spacing-one);
+}
+
+.mx-2 {
+  margin-right: var(--spacing-two);
+  margin-left: var(--spacing-two);
+}
+
+.mx-3 {
+  margin-right: var(--spacing-three);
+  margin-left: var(--spacing-three);
+}
+
+.mx-4 {
+  margin-right: var(--spacing-four);
+  margin-left: var(--spacing-four);
+}
+
+.mx-5 {
+  margin-right: var(--spacing-five);
+  margin-left: var(--spacing-five);
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Margin - y axis */
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.my-1 {
+  margin-top: var(--spacing-one);
+  margin-bottom: var(--spacing-one);
+}
+
+.my-2 {
+  margin-top: var(--spacing-two);
+  margin-bottom: var(--spacing-two);
+}
+
+.my-3 {
+  margin-top: var(--spacing-three);
+  margin-bottom: var(--spacing-three);
+}
+
+.my-4 {
+  margin-top: var(--spacing-four);
+  margin-bottom: var(--spacing-four);
+}
+
+.my-5 {
+  margin-top: var(--spacing-five);
+  margin-bottom: var(--spacing-five);
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
