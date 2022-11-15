@@ -632,3 +632,45 @@ nav a:hover {
 .pl-2 {
   padding-left: var(--spacing-two);
 }
+
+.pr-0 {
+  padding-right: 0;
+}
+
+.pr-1 {
+  padding-right: var(--spacing-one);
+}
+
+.pr-2 {
+  padding-right: var(--spacing-two);
+}
+
+.pr-3 {
+  padding-right: var(--spacing-three);
+}
+
+.pr-4 {
+  padding-right: var(--spacing-four);
+}
+
+.pr-5 {
+  padding-right: var(--spacing-five);
+}
+
+.pr-auto {
+  padding-right: auto;
+}
+
+/* padding-left */
+
+.pl-0 {
+  padding-left: 0;
+}
+
+.pl-1 {
+  padding-left: var(--spacing-one);
+}
+
+.pl-2 {
+  padding-left: var(--spacing-two);
+}
