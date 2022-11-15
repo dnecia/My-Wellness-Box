@@ -65,3 +65,54 @@ h5 {
 h6 {
   font-size: 1rem;
 }
+
+
+p {
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+nav {
+  width: 100%;
+  justify-content: center;
+}
+
+nav a {
+  padding: 6px 10px;
+  margin: 0 15px;
+  transition: all 0.2s;
+}
+
+nav a:hover {
+  color: var(--secondary);
+  background-color: var(--dark);
+}
+
+.page-title {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  font-size: 2.5rem;
+}
+.btn,
+.pill {
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  margin: 5px 0;
+  border-radius: var(--border-radius);
+  border: none;
+  color: var(--dark);
+  outline: none;
+  background-color: var(--primary);
+  transition: all 0.5s;
+}
+
