@@ -289,5 +289,60 @@ nav a:hover {
   min-width: 100vw;
 }
 
+.m-0 {
+  margin: 0;
+}
+
+.m-1 {
+  margin: var(--spacing-one);
+}
+
+.m-2 {
+  margin: var(--spacing-two);
+}
+
+.m-3 {
+  margin: var(--spacing-three);
+}
+
+.m-4 {
+  margin: var(--spacing-four);
+}
+
+.m-5 {
+  margin: var(--spacing-five);
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: var(--spacing-one);
+}
+
+.mb-2 {
+  margin-bottom: var(--spacing-two);
+}
+
+.mb-3 {
+  margin-bottom: var(--spacing-three);
+}
+
+.mb-4 {
+  margin-bottom: var(--spacing-four);
+}
+
+.mb-5 {
+  margin-bottom: var(--spacing-five);
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}
 
 
