@@ -504,3 +504,90 @@ nav a:hover {
   margin-top: auto;
   margin-bottom: auto;
 }
+.p-0 {
+  padding: 0;
+}
+
+.p-1 {
+  padding: var(--spacing-one);
+}
+
+.p-2 {
+  padding: var(--spacing-two);
+}
+
+.p-3 {
+  padding: var(--spacing-three);
+}
+
+.p-4 {
+  padding: var(--spacing-four);
+}
+
+.p-5 {
+  padding: var(--spacing-five);
+}
+
+.p-auto {
+  padding: auto;
+}
+
+/* padding-bottom */
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.pb-1 {
+  padding-bottom: var(--spacing-one);
+}
+
+.pb-2 {
+  padding-bottom: var(--spacing-two);
+}
+
+.pb-3 {
+  padding-bottom: var(--spacing-three);
+}
+
+.pb-4 {
+  padding-bottom: var(--spacing-four);
+}
+
+.pb-5 {
+  padding-bottom: var(--spacing-five);
+}
+
+.pb-auto {
+  padding-bottom: auto;
+}
+
+/* padding-top */
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.pt-1 {
+  padding-top: var(--spacing-one);
+}
+
+.pt-2 {
+  padding-top: var(--spacing-two);
+}
+
+.pt-3 {
+  padding-top: var(--spacing-three);
+}
+
+.pt-4 {
+  padding-top: var(--spacing-four);
+}
+
+.pt-5 {
+  padding-top: var(--spacing-five);
+}
+
+.pt-auto {
+  padding-top: auto;
+}
