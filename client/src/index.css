@@ -235,3 +235,33 @@ nav a:hover {
   transform: scale(1);
 }
 
+/*layout styling*/
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-fluid {
+  width: 92%;
+}
+
+/*Display styling*/
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+.display-inline {
+  display: inline;
+}
+
+
