@@ -15,6 +15,7 @@ const Header = () => {
                     <hi>Restaurant Reviews</hi>
                 </Link>
                 <nav className="text-center">
+                    <Link to="/searchreviews">Search Reviews</Link>
                     {Auth.loggedIn() ? (
                         <>
                           <Link to="/profile">MY PROFILE</Link>
@@ -26,6 +27,7 @@ const Header = () => {
                         <>
                          <Link to="/login"> LOGIN </Link>
                          <Link to="/signup"> SIGNUP</Link>
+                         
                         </>
                     )}
                 </nav>

@@ -13,6 +13,7 @@ import Login from './pages/Login';
 import Profile from './pages/profile';
 import Signup from './pages/Signup';
 import SingleReview from './pages/SingleReview';
+import SearchReviews from './pages/SearchReviews';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -44,6 +45,10 @@ function App() {
             <Route 
                 path="/" 
                 element={<Home />} 
+              />
+               <Route 
+                path="/searchreviews" 
+                element={<SearchReviews />} 
               />
               <Route 
                 path="/login" 

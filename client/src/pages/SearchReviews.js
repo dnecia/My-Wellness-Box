@@ -6,7 +6,7 @@ import FriendList from '../components/FriendList'
 import Auth from '../utils/auth';
 import ReviewForm from '../components/ReviewForm';
 
-const Home = ()=>{
+const SearchReviews = ()=>{
     //useQuery hook to make request.
     const{ loading, data}= useQuery(QUERY_REVIEWS)
     //destructure from useQuery hook's response, and rename it userData.
@@ -19,7 +19,7 @@ const Home = ()=>{
     
     return(
         <main>
-      {/* <div className="flex-row justify-space-between">
+      <div className="flex-row justify-space-between">
         {loggedIn && (
           <div className="col-12 mb-3">
             <ReviewForm />
@@ -44,9 +44,9 @@ const Home = ()=>{
             />
           </div>
         ) : null}
-      </div> */}
+      </div>
      </main>
     );
 };
 
-export default Home;
+export default SearchReviews;
