@@ -25,7 +25,7 @@ const reviewSchema = new Schema(
         comments: [commentSchema],
     },
     {
-        toJson: {
+        toJSON: {
             getters: true,
         },
     }
