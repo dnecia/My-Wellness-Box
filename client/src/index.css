@@ -1,6 +1,6 @@
 :root {
   --primary: #cab32f;
-  --secondary: #c19973b4; /* header footer color and submit button*/
+  --secondary: #a87e57b4; /* header footer color and submit button*/
   --tertiary: #281b06;
   --quatrinary: #de872a;
   --light: #e1f5f4;
@@ -22,7 +22,7 @@ body {
   line-height: 1.5;
   font-size: 20px;
   color: var(--dark);
-  background-image: url('../public/assets/images/White\ and\ Black\ Photographic\ Food\ &\ Restaurant\ Service\ Website-2.png');
+  background-image: url('../public/assets/images/White\ and\ Black\ Photographic\ Food\ &\ Restaurant\ Service\ Website-2\ copy.png');
   background-size: 1300px;
   background-repeat: no-repeat;
 }
