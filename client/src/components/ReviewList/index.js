@@ -23,7 +23,7 @@ const ReviewList = ({ reviews, title }) => {
               </p>
               <div className="card-body">
                 <Link to={`/review/${review._id}`}>
-                  <p>{review.review}</p>
+                  <p>{review.reviewText}</p>
                   <p className="mb-0">
                     Comments: {review.commentCount} || Click to{" "}
                     {review.commentCount ? "see" : "start"} the discussion!
