@@ -27,6 +27,7 @@ const Signup = () => {
 
         //handle the errors using try and catch
         try {
+            console.log(formState);
             const { data } = await addUser({
                 variables: {...formState },
             });
