@@ -79,7 +79,7 @@ const resolvers = {
     },
     addComment: async (parent, { reviewId, commentBody }, context) => {
       if (context.user) {
-        const updateReview = await Review.findOneAndUpdate(
+        const updatedReview = await Review.findOneAndUpdate(
           {_id: reviewId },
           { $push: { comments: { commentBody, username: context.user.username }}},
           { new: true, runValidators: true }

@@ -63,7 +63,8 @@ function App() {
                 element={<Profile />} 
               />
               <Route 
-                path="/review" 
+                path="/review/:id" 
+
                 element={<SingleReview />} 
               />
             </Routes>
