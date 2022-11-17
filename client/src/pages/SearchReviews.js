@@ -31,7 +31,7 @@ const SearchReviews = ()=>{
           ) : (
             <ReviewList
               reviews={reviews}
-              title="Reviews..."
+              title="Reviews"
             />
           )}
         </div>

@@ -19,14 +19,13 @@ const ReviewList = ({ reviews, title }) => {
                   {review.username}
                 </Link>{" "}
                 review on {review.createdAt}
-                <button>SAVE</button>
               </p>
               <div className="card-body">
                 <Link to={`/review/${review._id}`}>
                   <p>{review.reviewText}</p>
                   <p className="mb-0">
-                    Comments: {review.commentCount} || Click to{" "}
-                    {review.commentCount ? "see" : "start"} the discussion!
+                    Comments: {review.commentCount} -- Click to{" "}
+                    {review.commentCount ? "see" : "leave"}  a review!
                   </p>
                 </Link>
               </div>

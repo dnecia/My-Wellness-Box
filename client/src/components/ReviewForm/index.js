@@ -58,7 +58,7 @@ const ReviewForm=()=>{
         <div>
             <form onSubmit={handleFormSubmit}>
             <textarea
-                placeholder="Write a review here"
+                placeholder="Write your review here"
                 value={reviewText}
                 onChange={handleChange}
             ></textarea>

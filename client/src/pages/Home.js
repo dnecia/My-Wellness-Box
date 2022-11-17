@@ -6,6 +6,7 @@ import FriendList from '../components/FriendList'
 import Auth from '../utils/auth';
 import ReviewForm from '../components/ReviewForm';
 
+
 const Home = ()=>{
     //useQuery hook to make request.
     const{ loading, data}= useQuery(QUERY_REVIEWS)
@@ -19,32 +20,13 @@ const Home = ()=>{
     
     return(
         <main>
-      {/* <div className="flex-row justify-space-between">
-        {loggedIn && (
-          <div className="col-12 mb-3">
-            <ReviewForm />
+          <div>
+          <h1 class="center">Restaurant Reviews</h1>
           </div>
-        )}
-        <div className={`col-12 mb-3 ${loggedIn && 'col-lg-8'}`}>
-          {loading ? (
-            <div>Loading...</div>
-          ) : (
-            <ReviewList
-              reviews={reviews}
-              title="Reviews..."
-            />
-          )}
-        </div>
-        {loggedIn && userData ? (
-          <div className="col-12 col-lg-3 mb-3">
-            <FriendList
-              username={userData.me.username}
-              friendCount={userData.me.friendCount}
-              friends={userData.me.friends}
-            />
-          </div>
-        ) : null}
-      </div> */}
+          
+          
+          
+        
      </main>
     );
 };

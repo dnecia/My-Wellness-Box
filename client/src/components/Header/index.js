@@ -18,15 +18,15 @@ const Header = () => {
                     <Link to="/searchreviews">Search Reviews</Link>
                     {Auth.loggedIn() ? (
                         <>
-                          <Link to="/profile">MY PROFILE</Link>
+                          <Link to="/profile">My Profile</Link>
                           <a href="/" onClick={logout}>
-                              LOGOUT
+                              Logout
                           </a>
                         </>  
                     )   : (
                         <>
-                         <Link to="/login"> LOGIN </Link>
-                         <Link to="/signup"> SIGNUP</Link>
+                         <Link to="/login"> Login </Link>
+                         <Link to="/signup"> Signup</Link>
                          
                         </>
                     )}

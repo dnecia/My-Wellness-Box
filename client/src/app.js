@@ -63,6 +63,14 @@ function App() {
                 element={<Profile />} 
               />
               <Route 
+                path="/profile/:username" 
+                element={<Profile />} 
+              />
+              <Route 
+                path="/profile/:username/:friends" 
+                element={<Profile />} 
+              />
+              <Route 
                 path="/review/:id" 
 
                 element={<SingleReview />} 

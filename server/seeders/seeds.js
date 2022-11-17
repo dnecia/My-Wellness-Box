@@ -1,20 +1,20 @@
 const db = require("../config/connection");
 const { Review, User } = require("../models");
-const faker = require('faker');
+//const faker = require('faker');
 
 db.once('open', async () => {
  await Review.deleteMany({});
  await User.deleteMany({});
 
-  const userData = [];
+  //const userData = [];
 
-    for (let i = 0; i < 50; i += 1) {
-     const username = faker.internet.userName();
-     const email = faker.internet.email(username);
-     const password = faker.internet.password();
+    //for (let i = 0; i < 50; i += 1) {
+     //const username = faker.internet.userName();
+     //const email = faker.internet.email(username);
+     //const password = faker.internet.password();
 
-     userData.push({ username, email, password });
-    }
+     //userData.push({ username, email, password });
+    //}
 
     //creating friends
     for (let i = 0; i < 100; i += 1) {

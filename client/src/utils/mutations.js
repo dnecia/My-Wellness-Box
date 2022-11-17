@@ -38,6 +38,21 @@ export const ADD_FRIEND = gql`
   }
 `;
 
+export const REMOVE_FRIEND = gql`
+  mutation removeFriend($id: ID!) {
+    remove(friendId: $id) {
+      _id
+      username
+      friends {
+        _id
+        username
+      }
+    }
+  }
+`;
+
+
+
 export const ADD_REVIEW = gql`
   mutation addReview($reviewText: String!) {
     addReview(reviewText: $reviewText) {
