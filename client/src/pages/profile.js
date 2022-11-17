@@ -50,14 +50,10 @@ const Profile = (props) => {
     <div>
       <div className="flex-row mb-3">
         <h2 className="bg-dark text-secondary p-3 display-inline-block">
-          Viewing {userParam ? `${user.username}'s` : 'your'} profile.
+          Your Reviews
         </h2>
 
-        {userParam && (
-          <button className="btn ml-auto" onClick={handleClick}>
-            Add Friend
-          </button>
-        )}
+      
       </div>
 
       <div className="flex-row justify-space-between mb-3">

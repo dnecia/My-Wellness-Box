@@ -20,9 +20,10 @@ const Home = ()=>{
     
     return(
         <main>
-          <div>
-          <h1 class="center">Restaurant Reviews</h1>
-          </div>
+          <center>
+          <h5>Restaurant Reviews</h5>
+          <h1>Finding a new restauarnt just got easier </h1>
+          </center>
           
           
           

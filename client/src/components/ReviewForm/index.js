@@ -67,7 +67,7 @@ const ReviewForm=()=>{
                 {error && <span>something went wrong</span>}
             </p>
             <button type="submit">
-                submit!
+                submit
             </button>
             </form>
         </div>
