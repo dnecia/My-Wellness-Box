@@ -24,7 +24,7 @@ const ReviewList = ({ reviews, title }) => {
                 <Link to={`/review/${review._id}`}>
                   <p>{review.reviewText}</p>
                   <p className="mb-0">
-                    Comments: {review.commentCount} -- Leave {" "}
+                    Comments: {review.commentCount} -- {" "}
                     {review.commentCount ? "a" : "leave"}  Comment!
                   </p>
                 </Link>
