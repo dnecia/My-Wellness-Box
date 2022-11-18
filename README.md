@@ -16,8 +16,9 @@ For this Project, we created an app for a user to be able to share their restaur
 
 
 ## Image 
-![screenshot of app](./client/public/Screen%20Shot%202022-11-13%20at%205.02.00%20AM.png)
-![screenshot of app](./client/public/Screen%20Shot%202022-11-13%20at%205.02.20%20AM.png)
+![screenshot of app](./client/public/assets/images/Home%20Page.png)
+![screenshot of app](./client/public/assets/images/SearchReviews.png)
+![screenshot of app](./client/public/assets/images/Profile.png)
 
 ## Heroku 
 Here is the link to Heroku: https://shrouded-taiga-00254.herokuapp.com/
