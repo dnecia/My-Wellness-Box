@@ -1,10 +1,10 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 import {QUERY_REVIEWS, QUERY_ME_BASIC} from '../utils/queries';
-import ReviewList from '../components/ReviewList';
-import FriendList from '../components/FriendList'
+//import ReviewList from '../components/ReviewList';
+//import FriendList from '../components/FriendList'
 import Auth from '../utils/auth';
-import ReviewForm from '../components/ReviewForm';
+//import ReviewForm from '../components/ReviewForm';
 
 
 const Home = ()=>{
